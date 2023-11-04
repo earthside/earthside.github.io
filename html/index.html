@@ -19,7 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+    
     <!-- BASE CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -35,133 +35,53 @@
         <div data-loader="circle-side"></div>
     </div><!-- /Page Preload -->
 
-    <div class="layer"></div><!-- Opacity Mask -->
-
-    <header class="reveal_header">
+    <header class="fixed_header menu_v4 submenu_version">
+        <div class="layer"></div><!-- Opacity Mask -->
         <div class="container">
             <div class="row align-items-center">
-                 <div class="col-6">
+                <div class="col-3">
                     <a href="index.html" class="logo_normal"><img src="img/logo.png" width="135" height="45" alt=""></a>
                     <a href="index.html" class="logo_sticky"><img src="img/logo_sticky.png" width="135" height="45" alt=""></a>
                 </div>
-                <div class="col-6">
-                    <nav>
-                        <ul>
-                            <li><a href="#booking_section" class="btn_1 btn_scrollto">Book Now</a></li>
-                            <li>
-                               <div class="hamburger_2 open_close_nav_panel">
-                                    <div class="hamburger__box">
-                                        <div class="hamburger__inner"></div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </nav>
+                <div class="col-9">
+                    <div class="main-menu">
+                        <a href="#" class="closebt open_close_menu"><i class="bi bi-x"></i></a>
+                        <div class="logo_panel"><img src="img/logo_sticky.png" width="135" height="45" alt=""></div>
+                        <nav id="mainNav">
+                            <ul>
+                                 <li class="submenu">
+                                    <a href="#0" class="show-submenu">Home</a>
+                                </li>
+                                <li class="submenu">
+                                     <a href="about.html" class="show-submenu">About Us</a>
+                                </li>
+                                <li class="submenu">
+                                    <a href="shared-ownership.html" class="show-submenu">Shared Ownership</a>
+                                </li>
+                                <li><a href="room-list.html">Rooms</a></li>
+                                
+                                <li><a href="#booking_section" class="btn_1">Contact Us</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="hamburger_2 open_close_menu float-end">
+                        <div class="hamburger__box">
+                            <div class="hamburger__inner"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div><!-- /container -->
-    </header><!-- /Header -->
-
-    <div class="nav_panel">
-        <a href="#" class="closebt open_close_nav_panel"><i class="bi bi-x"></i></a>
-        <div class="logo_panel"><img src="img/logo_sticky.png" width="135" height="45" alt=""></div>
-        <div class="sidebar-navigation">
-            <nav>
-                <ul class="level-1">
-                    <li class="parent"><a href="#0">Home</a>
-                         <ul class="level-2">
-                            <li class="back"><a href="#0">Back</a></li>
-                            <li><a href="index.html">Home Video Bg</a></li>
-                            <li><a href="index-2.html">Home Carousel</a></li>
-                            <li><a href="index-3.html">Home FlexSlider</a></li>
-                            <li><a href="index-4.html">Home Youtube/Vimeo</a></li>
-                            <li><a href="index-5.html">Home Parallax</a></li>
-                            <li><a href="index-6.html">Home Parallax 2</a></li>
-                            <li><a href="index-7.html">Home Working Booking</a></li>
-                        </ul>
-                    </li>
-                    <li class="parent"><a href="#0">Rooms & Suites</a>
-                        <ul class="level-2">
-                            <li class="back"><a href="#0">Back</a></li>
-                            <li><a href="room-list-1.html">Room list 1</a></li>
-                            <li><a href="room-list-2.html">Room list 2</a></li>
-                            <li><a href="room-list-3.html">Room list 3</a></li>
-                            <li><a href="room-details.html">Room details</a></li>
-                            <li><a href="room-details-booking.html">Working Booking Request</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="restaurant.html">Restaurant</a></li>
-                    <li><a href="news-1.html">News & events</a></li>
-                    <li><a href="contacts.html">Contact</a></li>
-                    <li class="parent"><a href="#0">Other Pages</a>
-                        <ul class="level-2">
-                            <li class="back"><a href="#0">Back</a></li>
-                            <li><a href="404.html">Error Page</a></li>
-                            <li><a href="gallery.html">Masonry Gallery</a></li>
-                            <li><a href="menu-of-the-day.html">Menu of the day</a></li>
-                            <li><a href="modal-advertise-1.html">Modal Advertise</a></li>
-                            <li><a href="cookie-bar.html">GDPR Cookie Bar</a></li>
-                            <li><a href="coming-soon.html">Coming Soon</a></li>
-                        </ul>
-                    </li>
-                    <li class="parent"><a href="#0">Menu Versions</a>
-                        <ul class="level-2">
-                            <li class="back"><a href="#0">Back</a></li>
-                            <li><a href="menu-2.html">Menu Version 2 <span class="custom_badge">Hot</span></a></li>
-                            <li><a href="menu-3.html">Menu Version 3</a></li>
-                            <li><a href="menu-4.html">Menu Version 4</a></li>
-                            <li><a href="menu-5.html">Menu Version 5</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <div class="panel_footer">
-                    <div class="phone_element"><a href="tel://423424234"><i class="bi bi-telephone"></i><span><em>Info and bookings</em>+41 934 121 1334</span></a></div>
-                </div>
-                <!-- /panel_footer -->
-            </nav>
-        </div>
-        <!-- /sidebar-navigation -->
-    </div>
-    <!-- /nav_panel -->
-
+        </div><!-- container -->
+    </header><!-- End Header -->
+ 
     <main>
+
         <div class="hero home-search full-height jarallax" data-jarallax-video="mp4:./video/sunset.mp4,webm:./video/sunset.webm,ogv:./video/sunset.ogv" data-speed="0.2">
             <div class="wrapper opacity-mask d-flex align-items-center justify-content-center text-center animate_hero" data-opacity-mask="rgba(0, 0, 0, 0.5)">
                 <div class="container">
-                    <small class="slide-animated one">Luxury Hotel Experience</small>
-                    <h3 class="slide-animated two">A unique Experience<br>where to stay</h3>
-                    <div class="row justify-content-center slide-animated three">
-                        <div class="col-xl-10">
-                            <div class="row g-0 booking_form">
-                                <div class="col-lg-4 ">
-                                    <div class="form-group">
-                                        <input class="form-control" type="text" name="dates" id="dates" placeholder="Check in / Check out" readonly="readonly">
-                                        <i class="bi bi-calendar2"></i>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-sm-6 pe-lg-0 pe-sm-1">
-                                    <div class="qty-buttons">
-                                        <label>Adults</label>
-                                        <input type="button" value="+" class="qtyplus" name="adults">
-                                        <input type="text" name="adults" id="adults" value="" class="qty form-control">
-                                        <input type="button" value="-" class="qtyminus" name="adults">
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-sm-6 ps-lg-0 ps-sm-1">
-                                    <div class="qty-buttons">
-                                        <label>Childs</label>
-                                        <input type="button" value="+" class="qtyplus" name="childs">
-                                        <input type="text" name="childs" id="childs" value="" class="qty form-control">
-                                        <input type="button" value="-" class="qtyminus" name="childs">
-                                    </div>
-                                </div>
-                                <div class="col-lg-2">
-                                    <input type="submit" class="btn_search" value="Search">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <small class="slide-animated one">Start generating your own passive income</small>
+                    <h3 class="slide-animated two">Own a Home in a Resort at<br>Mahabaleshwar</h3>
+
                 </div>
                 <div class="mouse_wp slide-animated four">
                     <a href="#first_section" class="btn_scrollto">
@@ -185,120 +105,231 @@
                     <div class="col-lg-5">
                         <div class="intro">
                             <div class="title">
-                                <small>About us</small>
-                                <h2>Tailored services and the experience of unique holidays</h2>
+                                <small>Amidst the tranquility of Panchagani</small>
+                                <h2>An Enticing Business Opportunity</h2>
                             </div>
-                            <p class="lead">Vivamus volutpat eros pulvinar velit laoreet, sit amet egestas erat dignissim.</p>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                            <p><em>Maria...the Owner</em></p>
+                            <!-- <p class="lead">Vivamus volutpat eros pulvinar velit laoreet, sit amet egestas erat dignissim.</p> -->
+                            <p>This proposal presents an enticing opportunity for investors to participate in the lucrative hospitality industry by supporting the creation of a world-class resort in Mahabaleshwar. The proposed resort will provide visitors with a unique and peaceful experience amidst the scenic hills and valleys of this sought-after destination. The resort will be managed by a team of experienced professionals committed to delivering high-quality services and unforgettable experiences for guests. The proposed resort will be situated in a prime location that offers a panoramic view of the beautiful surroundings. It will be easily accessible yet remote enough to ensure peace and tranquility for guests. With its luxurious amenities and natural setting, the resort is expected to generate significant revenue and profits in the years to come. Investors interested in participating in this exciting venture are invited to join us in creating a worldclass resort that will be a source of pride for Panchagani and Mahabaleshwar.</p>
+                            <p><em>Team...Earthside</em></p>
                         </div>
                     </div>
                 </div>
                 <!-- /Row -->
             </div>
-            <div class="pinned-image pinned-image--medium">
-                <div class="pinned-image__container" id="section_video">
-                    <video loop="loop" muted="muted" id="video_home">
-                        <source src="video/swimming_pool_2.mp4" type="video/mp4">
-                        <source src="video/swimming_pool_2.webm" type="video/webm">
-                        <source src="video/swimming_pool_2.ogv" type="video/ogg">
-                    </video>
-                    <div class="pinned-image__container-overlay"></div>
+        </div>
+       
+        <div class="container margin_120_95">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-5">
+                    <div class="intro">
+                        <div class="title">
+                            <small>Earthside Resort</small>
+                            <h2>Location highlights</h2>
+                        </div>
+                        <div>
+                            <p class="phone_element"></a></p>
+                              <ul class="list-unstyled mb-4">
+                                  <li class="d-flex justify-content-between mb-2 text-end">
+                                      <strong>Hospital</strong> <span>8 km</span>
+                                  </li>
+                                  <li class="d-flex justify-content-between mb-2 text-end">
+                                      <strong>Bus Stand</strong>  <span>6 km</span>
+                                  </li>
+                                  <li class="d-flex justify-content-between mb-2 text-end">
+                                      <strong>Mapro Garden</strong>  <span>4 km<br></span>
+                                  </li>
+                                  <li class="d-flex justify-content-between mb-2 text-end">
+                                    <strong>Panchagani</strong> <span>5 km</span>
+                                </li>
+                                <li class="d-flex justify-content-between mb-2 text-end">
+                                    <strong>Restaurants</strong>  <span>2 km</span>
+                                </li>
+                                <li class="d-flex justify-content-between mb-2 text-end">
+                                    <strong>Amusement Park</strong>  <span>8 km<br></span>
+                                </li>                          
+                                <li class="d-flex justify-content-between mb-2 text-end">
+                                    <strong>Monginis Cake Shop</strong> <span>4 km</span>
+                                </li>
+                                <li class="d-flex justify-content-between mb-2 text-end">
+                                    <strong>Boating</strong>  <span>6 km</span>
+                                </li>
+                                <li class="d-flex justify-content-between mb-2 text-end">
+                                    <strong>Horse Riding</strong>  <span>9 km<br></span>
+                                </li>                                                  
+                              </ul>
+                          </div>
+                    </div>
                 </div>
-                <div class="pinned_over_content">
-                    <div class="title white">
-                        <small data-cue="slideInUp" data-delay="200">Luxury Hotel Experience</small>
-                        <h2 data-cue="slideInUp" data-delay="300">Enjoy in a very<br> Immersive Relax</h2>
+              <div class="col-lg-5">
+                <div class="map_contact">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.4364241114604!2d-73.96780638459853!3d40.774418641731515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258a29d3847f5%3A0x564dfbba0141774a!2s5th%20Ave%2C%20New%20York%2C%20NY%2C%20Stati%20Uniti!5e0!3m2!1sit!2ses!4v1661414716655!5m2!1sit!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                </div>
+            </div>
+            <!-- /Row -->
+        </div>
+        <!-- /container -->
+
+        <div class="bg_white">
+            <div class="container margin_120_95">
+                <div>
+                    <div class="row justify-content-between">
+                        <div class="col-lg-5 fixed_title">
+                            <div class="title">
+                                <small>Earthside Resort</small>
+                                <h2>Specialities</h2>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+                            </div>
+                            <div class="list_ok">
+                                <ul>
+                                    <li data-cue="slideInUp" data-delay="200">
+                                        <h5>Situated in the lap of Nature</h5>
+                                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.</p>
+                                    </li>
+                                    <li data-cue="slideInUp" data-delay="300">
+                                        <h5>Valley View</h5>
+                                        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
+                                    </li>
+                                    <li data-cue="slideInUp" data-delay="400">
+                                        <h5>Luxurious Rooms</h5>
+                                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+                                    </li>
+                                    <li data-cue="slideInUp" data-delay="400">
+                                        <h5>Surrounded by Strawberry Farms</h5>
+                                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+                                    </li>
+                                    <li data-cue="slideInUp" data-delay="400">
+                                        <h5>Walkable from Bhilar Town</h5>
+                                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+                                    </li>
+                                    <li data-cue="slideInUp" data-delay="400">
+                                        <h5>Highest point in Bhilar, Panchagani area</h5>
+                                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+                                    </li>                                                                                                            
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 ">
+                            <div data-cue="fadeIn" data-delay="500">
+                                <figure><img src="img/local_amenities_1.jpg" alt="" class="img-fluid rounded-img"></figure>
+                            </div>
+                            <div data-cue="fadeIn" data-delay="500">
+                                <figure>
+                                    <img src="img/local_amenities_2.jpg" alt="" class="img-fluid rounded-img">
+                                </figure>
+                            </div>
+                            <div data-cue="fadeIn" data-delay="500">
+                                <figure>
+                                    <img src="img/local_amenities_3.jpg" alt="" class="img-fluid rounded-img">
+                                </figure>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- /pinned content -->
+            <!-- /container-->
         </div>
-        <!-- /Pattern  -->   
-
+        <!-- /bg_white -->
+    
+        <!-- /Rooms  -->   
+       
         <div class="container margin_120_95">
             <div class="title mb-3">
-                <small data-cue="slideInUp">Luxury experience</small>
-                <h2 data-cue="slideInUp" data-delay="200">Rooms & Suites</h2>
+                <small data-cue="slideInUp">Proposed Offerings</small>
+                <h2 data-cue="slideInUp" data-delay="200">Villas & Cottages</h2>
             </div>
             <div class="row justify-content-center add_bottom_90" data-cues="slideInUp" data-delay="300">
-                <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+                <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12">
                     <a href="room-details.html" class="box_cat_rooms">
                         <figure>
-                            <div class="background-image" data-background="url(img/rooms/1.jpg)"></div>
+                            <div class="background-image" data-background="url(img/rooms/1.jpeg)"></div>
                             <div class="info">
-                                <small>From $250/night</small>
-                                <h3>Junior Suite</h3>
+                                <small>1220 sqft</small>
+                                <h3>2BHK Villa</h3>
                                 <span>Read more</span>
                             </div>
                         </figure>
                     </a>
                 </div>
-                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12">
                     <a href="room-details.html" class="box_cat_rooms">
                         <figure>
-                            <div class="background-image" data-background="url(img/rooms/2.jpg)"></div>
+                            <div class="background-image" data-background="url(img/rooms/2.avif)"></div>
                             <div class="info">
-                                <small>From $190/night</small>
-                                <h3>Deluxe Room</h3>
+                                <small>730 sqft</small>
+                                <h3>2 Bed Loft Cottage</h3>
                                 <span>Read more</span>
                             </div>
                         </figure>
                     </a>
-                </div>
+                </div>                
                 <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
                     <a href="room-details.html" class="box_cat_rooms">
                         <figure>
                             <div class="background-image" data-background="url(img/rooms/3.jpg)"></div>
                             <div class="info">
-                                <small>From $240/night</small>
-                                <h3>Superior Room</h3>
+                                <small>320-500 sqft</small>
+                                <h3>Independent Cottage</h3>
                                 <span>Read more</span>
                             </div>
                         </figure>
                     </a>
                 </div>
-                <p class="text-end"><a href="room-list-1.html" class="btn_1 outline mt-2">View all Rooms</a></p>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+                    <a href="room-details.html" class="box_cat_rooms">
+                        <figure>
+                            <div class="background-image" data-background="url(img/rooms/4.jpg)"></div>
+                            <div class="info">
+                                <small>250 sqft</small>
+                                <h3>Luxury Cottage</h3>
+                                <span>Read more</span>
+                            </div>
+                        </figure>
+                    </a>
+                </div>
+                <p class="text-end"><a href="room-list.html" class="btn_1 outline mt-2">View all Rooms</a></p>
             </div>
             <!-- /row-->
-
-            <div class="title text-center mb-5">
-                <small data-cue="slideInUp">Paradise Hotel</small>
-                <h2 data-cue="slideInUp" data-delay="100">Main Facilities</h2>
-            </div>
-            <div class="row mt-4">
-                <div class="col-xl-3 col-md-6">
-                    <div class="box_facilities no-border" data-cue="slideInUp">
-                        <i class="customicon-private-parking"></i>
-                        <h3>Private Parking</h3>
-                        <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6">
-                    <div class="box_facilities" data-cue="slideInUp">
-                        <i class="customicon-wifi"></i>
-                        <h3>High Speed Wifi</h3>
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6">
-                    <div class="box_facilities" data-cue="slideInUp">
-                        <i class="customicon-cocktail"></i>
-                        <h3>Bar & Restaurant</h3>
-                        <p>Similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6">
-                    <div class="box_facilities" data-cue="slideInUp">
-                        <i class="customicon-swimming-pool"></i>
-                        <h3>Swimming Pool</h3>
-                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.</p>
-                    </div>
-                </div>
-            </div>
             <!-- /Row -->
         </div>
         <!-- /container-->
+
+
+        <div class="bg_white" id="first_section">
+            <div class="container margin_120_95">
+                <div class="row justify-content-between">
+                    <div class="col-lg-4">
+                        <div class="title">
+                            <small>Luxurious And Comfortable Rooms</small>
+                            <h2>Room Amenities</h2>
+                        </div>
+                        <p>Step into the open-to-sky showers and let nature's serenity surround you as you bathe, providing a unique connection to the outdoors. And for a touch of eco-friendly charm, our room features local plants that not only enhance the aesthetics but also contribute to a refreshing and vibrant atmosphere. </p>
+                        <p>The full glass facade and skylights not only flood the room with natural light but also offer breathtaking views of the picturesque valley. As you unwind by the indoor fireplace, you'll find yourself enveloped in a cozy, intimate atmosphere that's ideal for relaxation. With these remarkable amenities, your stay becomes a truly enchanting and memorable experience, as you connect with both nature and luxury in perfect harmony.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="room_facilities_list">
+                            <ul data-cues="slideInLeft">
+                                <li><i class="icon-hotel-double_bed_2"></i> King Size Bed</li>
+                                <li><i class="icon-hotel-wifi"></i> High Speed Connectivity</li>
+                                <li><i class="icon-hotel-patio"></i>Luxurious Rooms</li>
+                                <li><i class="icon-hotel-tv"></i> 65 Inch Smart TV</li>
+                                <li><i class="icon-hotel-loundry"></i>Wardrobe</li>
+                                <li><i class="icon-hotel-condition"></i> AC and Heater</li>
+                                <li><i class="customicon-private-parking"></i>Ample Parking Space</li>
+                                <li><i class="customicon-cocktail"></i> Pet Allowed</li>
+                                <li><i class="icon-hotel-calendar_1"></i> Generator Backup</li>
+                                <li><i class="icon-spa-oil"></i> Electric Kettle</li>
+                                <li><i class="icon-hotel-single_bed"></i>Driver Accomodation</li>
+                                <li><i class="customicon-shower"></i>Central Water Heater</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- /row -->
+            </div>
+            <!-- /container -->
+        </div>
+        <!-- /bg_white -->
 
         <div class="marquee">
             <div class="track">
@@ -309,6 +340,7 @@
 
         <div class="bg_white">
             <div class="container margin_120_95">
+                
                 <div class="row justify-content-between d-flex align-items-center add_bottom_90">
                     <div class="col-lg-6">
                         <div class="pinned-image rounded_container pinned-image--small mb-4">
@@ -319,8 +351,8 @@
                     </div>
                     <div class="col-lg-5">
                         <div class="title">
-                            <small>Local Amenities</small>
-                            <h3>Restaurants</h3>
+                            <small>Outdoor Amenities</small>
+                            <h3>Kids Play Area</h3>
                             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
                             <p><a href="about.html" class="btn_1 mt-1 outline">Read more</a></p>
                         </div>
@@ -337,14 +369,83 @@
                     </div>
                     <div class="col-lg-5 order-lg-1">
                         <div class="title">
-                            <small>Local Amenities</small>
-                            <h3>Art & Culture</h3>
+                            <small>Outdoor Amenities</small>
+                            <h3>Roof-top Barbecue</h3>
                             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
                             <p><a href="about.html" class="btn_1 mt-1 outline">Read more</a></p>
                         </div>
                     </div>
                 </div>
                 <!-- /row-->
+                <div class="row justify-content-between d-flex align-items-center add_bottom_90">
+                    <div class="col-lg-6">
+                        <div class="pinned-image rounded_container pinned-image--small mb-4">
+                            <div class="pinned-image__container">
+                                <img src="img/local_amenities_1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="title">
+                            <small>Outdoor Amenities</small>
+                            <h3>Caravan Park</h3>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                            <p><a href="about.html" class="btn_1 mt-1 outline">Read more</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-between d-flex align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="pinned-image rounded_container pinned-image--small mb-4">
+                            <div class="pinned-image__container">
+                                <img src="img/local_amenities_3.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 order-lg-1">
+                        <div class="title">
+                            <small>Outdoor Amenities</small>
+                            <h3>Retractable Roof</h3>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                            <p><a href="about.html" class="btn_1 mt-1 outline">Read more</a></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /row-->
+                <div class="row justify-content-between d-flex align-items-center add_bottom_90">
+                    <div class="col-lg-6">
+                        <div class="pinned-image rounded_container pinned-image--small mb-4">
+                            <div class="pinned-image__container">
+                                <img src="img/local_amenities_1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="title">
+                            <small>Outdoor Amenities</small>
+                            <h3>Swimming Pool</h3>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                            <p><a href="about.html" class="btn_1 mt-1 outline">Read more</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-between d-flex align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="pinned-image rounded_container pinned-image--small mb-4">
+                            <div class="pinned-image__container">
+                                <img src="img/local_amenities_3.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 order-lg-1">
+                        <div class="title">
+                            <small>Outdoor Amenities</small>
+                            <h3>Bonfire</h3>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                            <p><a href="about.html" class="btn_1 mt-1 outline">Read more</a></p>
+                        </div>
+                    </div>
+                </div>                
             </div>
             <!-- /container-->
         </div>
@@ -357,8 +458,8 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
                             <div class="title white">
-                                <small class="mb-1">Testimonials</small>
-                                <h2>What Clients Says</h2>
+                                <small class="mb-1">Trusted and Experienced Professionals</small>
+                                <h2>Who we are?</h2>
                             </div>
                             <div class="carousel_testimonials owl-carousel owl-theme nav-dots-orizontal">
                                 <div>
@@ -366,7 +467,7 @@
                                         <div class="pic">
                                             <figure><img src="img/testimonial_1.jpg" alt="" class="img-circle">
                                             </figure>
-                                            <h4>Roberta<small>12 Oct</small></h4>
+                                            <h4>Ankit<small>Team Lead @ Microsoft</small></h4>
                                         </div>
                                         <div class="comment">
                                             "Mea ad postea meliore fuisset. Timeam repudiare id eum, ex paulo dictas elaboraret sed, mel cu unum nostrud."
@@ -379,7 +480,7 @@
                                         <div class="pic">
                                             <figure><img src="img/testimonial_1.jpg" alt="" class="img-circle">
                                             </figure>
-                                            <h4>Roberta<small>2 Nov</small></h4>
+                                            <h4>Darshan<small>2 Nov</small></h4>
                                         </div>
                                         <div class="comment">
                                             "Mea ad postea meliore fuisset. Timeam repudiare id eum, ex paulo dictas elaboraret sed, mel cu unum nostrud."
@@ -453,69 +554,25 @@
             </div>
             <!--/container -->
         </div>
+        <!--/container -->
         <!--/bg_white -->
-
-
-        <div class="container margin_120_95" id="booking_section">
-            <div class="row justify-content-between">
-                <div class="col-xl-4">
-                    <div data-cue="slideInUp">
-                        <div class="title">
-                            <small>Paradise Hotel</small>
-                            <h2>Check Availability</h2>
-                        </div>
-                        <p>Mea nibh meis philosophia eu. Duis legimus efficiantur ea sea. Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cu. </p>
-                        <p class="phone_element no_borders"><a href="tel://423424234"><i class="bi bi-telephone"></i><span><em>Info and bookings</em>+41 934 121 1334</span></a></p>
-                    </div>
-                </div>
-                <div class="col-xl-7">
-                    <div data-cue="slideInUp" data-delay="200">
-                        <div class="booking_wrapper">
-                        	<div class="col-12">
-                                <input type="hidden" id="date_booking" name="date_booking">
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="custom_select">
-                                        <select class="wide">
-                                            <option>Select Room</option>
-                                            <option>Double Room</option>
-                                            <option>Deluxe Room</option>
-                                            <option>Superior Room</option>
-                                            <option>Junior Suite</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <div class="qty-buttons mb-3 version_2">
-                                                <input type="button" value="+" class="qtyplus" name="adults_booking">
-                                                <input type="text" name="adults_booking" id="adults_booking" value="" class="qty form-control" placeholder="Adults">
-                                                <input type="button" value="-" class="qtyminus" name="adults_booking">
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="mb-3 qty-buttons mb-3 version_2">
-                                                <input type="button" value="+" class="qtyplus" name="childs_booking">
-                                                <input type="text" name="childs_booking" id="childs_booking" value="" class="qty form-control" placeholder="Childs">
-                                                <input type="button" value="-" class="qtyminus" name="childs_booking">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- / row -->
-                        <p class="text-end mt-4"><a href="#0" class="btn_1 outline">Book Now</a></p>
-                    </div>
-                </div>
-                <!-- /col -->
+        <div class="pinned-image pinned-image--medium">
+            <div class="pinned-image__container" id="section_video">
+                <video loop="loop" muted="muted" id="video_home">
+                    <source src="video/swimming_pool_2.mp4" type="video/mp4">
+                    <source src="video/swimming_pool_2.webm" type="video/webm">
+                    <source src="video/swimming_pool_2.ogv" type="video/ogg">
+                </video>
+                <div class="pinned-image__container-overlay"></div>
             </div>
-            <!-- /row -->
+            <div class="pinned_over_content">
+                <div class="title white">
+                    <small data-cue="slideInUp" data-delay="200">Luxury Hotel Experience</small>
+                    <h2 data-cue="slideInUp" data-delay="300">Own a piece of <br>Luxury</h2>
+                </div>
+            </div>
         </div>
-        <!-- /container -->
-
+        <!-- /pinned content -->
     </main>
 
     <footer class="revealed">
@@ -528,8 +585,8 @@
                 <div class="col-lg-4 col-md-12">
                     <h5>Contacts</h5>
                     <ul>
-                        <li>Baker Street 567, Los Angeles 11023<br>California - US<br><br></li>
-                        <li><strong><a href="#0">info@Paradisehotel.com</a></strong></li>
+                        <li>Panchagani, Mahabaleshwar<br>Maharastra - India<br><br></li>
+                        <li><strong><a href="#0">info@earthside.in</a></strong></li>
                         <li><strong><a href="#0">+434 43242232</a></strong></li>
                     </ul>
                     <div class="social">
@@ -586,12 +643,12 @@
     </div>
     <!-- /back to top -->
 
-<!-- COMMON SCRIPTS -->
-<script src="js/common_scripts.js"></script>
-<script src="js/common_functions.js"></script>
-<script src="js/datepicker_search.js"></script>
-<script src="js/datepicker_inline.js"></script>
-<script src="phpmailer/validate.js"></script>
+    <!-- COMMON SCRIPTS -->
+    <script src="js/common_scripts.js"></script>
+    <script src="js/common_functions.js"></script>
+    <script src="js/datepicker_search.js"></script>
+    <script src="js/datepicker_inline.js"></script>
+    <script src="phpmailer/validate.js"></script>
 
 </body>
 </html>

@@ -38,6 +38,7 @@
 .customicon-washing-machine:before{content:'\0052';}
 .customicon-wifi:before{content:'\0053';}
 
+
 /* Hotel icons*/
 @font-face {
     font-family: 'hotel';
@@ -95,6 +96,7 @@
 .icon-hotel-tv:before{content:'\0069';}
 .icon-hotel-wifi:before{content:'\006A';}
 .icon-hotel-calendar_1:before{content:'\006B';}
+
 
 /* SPA ICONS (http://www.glyphter.com)*/
 @font-face {
