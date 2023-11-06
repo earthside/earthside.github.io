@@ -234,6 +234,7 @@ h6 {
 
 p {
   margin-bottom: 25px;
+  font-size: 16px;
 }
 
 strong {
@@ -277,8 +278,7 @@ a:hover, a:focus {
   font-weight: 600;
   display: block;
   margin-bottom: 5px;
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: 18px;
 }
 .title h2,
 .title h3 {
