@@ -1,0 +1,251 @@
+/* Switcher CSS File 
+	===================
+	Template Name: Sava - Creative pricing tables
+	Author: Ashish Maraviya
+	Version: 2.0
+	Copyright 2019
+===================*/
+
+/* Sava Default */
+.Sava-default{
+    margin-bottom: 15px;
+    text-align: center;     
+    letter-spacing: 1px;
+    font-family: 'Lato', sans-serif;
+    background: #fff;
+}
+/* Horizontal Rule(hr tag) line*/
+.Sava-default hr{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+/* To Put 3rd Table into Center */
+.m-auto{
+    margin: auto !important;
+}
+
+/* Sloating Switcher Button */
+.Sava-switcher{
+    text-align: center;
+}
+.Sava-switcher .Sava-field{
+    margin-bottom: 30px; 
+	display: inline-block;
+    position: relative;
+    padding: 2px;
+    background: radial-gradient( #888888, #555);
+	border: 2px solid #555;
+    border-radius: 50em;
+}
+.Sava-switcher input[type="radio"]{
+    position: absolute;
+    opacity: 0;
+}
+.Sava-switcher label{
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    float: left;
+    width: 90px;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    font-size: 17px;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+/* Floating Switcher Button Background */
+.Sava-switcher .Sava-switch{
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 40px;
+    width: 90px;
+    border-radius: 50em;
+    -webkit-transition: -webkit-transform 0.5s;
+    -moz-transition: -moz-transform 0.5s;
+    transition: transform 0.5s;
+}
+/* Use label:nth-of-type(n) to fix a bug on safari */
+.Sava-switcher input[type="radio"]:checked + label + .Sava-switch,
+.Sava-switcher input[type="radio"]:checked + label:nth-of-type(n) + .Sava-switch {
+    -webkit-transform: translateX(90px);
+    -moz-transform: translateX(90px);
+    -ms-transform: translateX(90px);
+    -o-transform: translateX(90px);
+    transform: translateX(90px);
+}
+/* this is the item that rotates */
+.Sava-wrapper{
+    position: relative;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+/* totate the tables - anticlockwise rotation */
+.Sava-wrapper.is-switched .is-visible{
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-animation: Sava-rotate 0.5s;
+    -moz-animation: Sava-rotate 0.5s;
+    animation: Sava-rotate 0.5s;
+}
+.Sava-wrapper.is-switched .is-hidden{
+    -webkit-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+    -ms-transform: rotateY(0);
+    -o-transform: rotateY(0);
+    transform: rotateY(0);
+    -webkit-animation: Sava-rotate-inverse 0.5s;
+    -moz-animation: Sava-rotate-inverse 0.5s;
+    animation: Sava-rotate-inverse 0.5s;
+    opacity: 0;
+}
+.Sava-wrapper.is-switched .is-selected{
+	opacity: 1;
+}
+.Sava-wrapper > li {
+    list-style-type: none;
+    background-color: #FFFFFF;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    outline: 1px solid transparent;
+}
+/* subtle gradient layer on the right - to indicate it's possible to scroll */
+.Sava-wrapper > li::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    pointer-events: none;
+    background: -webkit-linear-gradient( right , #FFFFFF, rgba(255, 255, 255, 0));
+    background: linear-gradient(to left, #FFFFFF, rgba(255, 255, 255, 0));
+}
+/* class added in jQuery - remove the gradient layer when it's no longer possible to scroll */
+.Sava-wrapper > li.is-ended::after {
+    display: none;
+}
+/* the front item, visible by default */
+.Sava-wrapper .is-visible{
+    position: relative;
+    z-index: 5;
+}
+/* the hidden items, right behind the front one */
+.Sava-wrapper .is-hidden{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+/* the next item that will be visible */
+.Sava-wrapper .is-selected {
+    z-index: 3 !important;
+}
+
+/* xkeyframes */
+@-webkit-keyframes Sava-rotate{
+	0% {
+		-webkit-transform: perspective(2000px) rotateY(0);
+	}
+	70% {
+		/* this creates the bounce effect */
+		-webkit-transform: perspective(2000px) rotateY(200deg);
+	}
+	100% {
+		-webkit-transform: perspective(2000px) rotateY(180deg);
+	}
+}
+@-moz-keyframes Sava-rotate {
+	0% {
+		-moz-transform: perspective(2000px) rotateY(0);
+	}
+	70% {
+		/* this creates the bounce effect */
+		-moz-transform: perspective(2000px) rotateY(200deg);
+	}
+	100% {
+		-moz-transform: perspective(2000px) rotateY(180deg);
+	}
+}
+@keyframes Sava-rotate {
+	0% {
+		-webkit-transform: perspective(2000px) rotateY(0);
+		-moz-transform: perspective(2000px) rotateY(0);
+		-ms-transform: perspective(2000px) rotateY(0);
+		-o-transform: perspective(2000px) rotateY(0);
+		transform: perspective(2000px) rotateY(0);
+	}
+	70% {
+		/* this creates the bounce effect */
+		-webkit-transform: perspective(2000px) rotateY(200deg);
+		-moz-transform: perspective(2000px) rotateY(200deg);
+		-ms-transform: perspective(2000px) rotateY(200deg);
+		-o-transform: perspective(2000px) rotateY(200deg);
+		transform: perspective(2000px) rotateY(200deg);
+	}
+	100% {
+		-webkit-transform: perspective(2000px) rotateY(180deg);
+		-moz-transform: perspective(2000px) rotateY(180deg);
+		-ms-transform: perspective(2000px) rotateY(180deg);
+		-o-transform: perspective(2000px) rotateY(180deg);
+		transform: perspective(2000px) rotateY(180deg);
+	}
+}
+@-webkit-keyframes Sava-rotate-inverse {
+    0% {
+        -webkit-transform: perspective(2000px) rotateY(-180deg);
+	}
+    70% {
+        /* this creates the bounce effect */
+        -webkit-transform: perspective(2000px) rotateY(20deg);
+	}
+    100% {
+        -webkit-transform: perspective(2000px) rotateY(0);
+	}
+}
+@-moz-keyframes Sava-rotate-inverse {
+    0% {
+        -moz-transform: perspective(2000px) rotateY(-180deg);
+	}
+    70% {
+        /* this creates the bounce effect */
+        -moz-transform: perspective(2000px) rotateY(20deg);
+	}
+    100% {
+        -moz-transform: perspective(2000px) rotateY(0);
+	}
+}
+@keyframes Sava-rotate-inverse {
+	0% {
+		-webkit-transform: perspective(2000px) rotateY(-180deg);
+		-moz-transform: perspective(2000px) rotateY(-180deg);
+		-ms-transform: perspective(2000px) rotateY(-180deg);
+		-o-transform: perspective(2000px) rotateY(-180deg);
+		transform: perspective(2000px) rotateY(-180deg);
+	}
+	70% {
+		/* this creates the bounce effect */
+		-webkit-transform: perspective(2000px) rotateY(20deg);
+		-moz-transform: perspective(2000px) rotateY(20deg);
+		-ms-transform: perspective(2000px) rotateY(20deg);
+		-o-transform: perspective(2000px) rotateY(20deg);
+		transform: perspective(2000px) rotateY(20deg);
+	}
+	100% {
+		-webkit-transform: perspective(2000px) rotateY(0);
+		-moz-transform: perspective(2000px) rotateY(0);
+		-ms-transform: perspective(2000px) rotateY(0);
+		-o-transform: perspective(2000px) rotateY(0);
+		transform: perspective(2000px) rotateY(0);
+	}
+}

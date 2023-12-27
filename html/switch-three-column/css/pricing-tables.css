@@ -1,0 +1,991 @@
+/* CSS File 
+	===================
+	Item Name: Sava - Creative pricing tables
+	Author: Ashish Maraviya
+	Version: 2.1
+	Copyright 2021-2022
+===================*/
+/*==============
+	Page General css
+=================*/
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h1 {
+  font-family: "Lato", sans-serif;
+}
+
+h2 {
+  font-family: "Lato", sans-serif;
+  margin-top: -5px;
+  font-weight: 600;
+  color: #555;
+}
+
+h3 {
+  font-family: "Lato", sans-serif;
+}
+
+h4 {
+  font-family: "Lato", sans-serif;
+}
+
+h5 {
+  font-family: "Lato", sans-serif;
+}
+
+h6 {
+  font-family: "Lato", sans-serif;
+}
+
+.pp-section {
+  padding: 100px 0 85px 0;
+}
+
+.section-header {
+  margin-bottom: 33px;
+}
+
+.section-bg {
+  background-color: #eee;
+}
+
+.color-picker {
+  position: fixed;
+  right: -190px;
+  top: 200px;
+  width: 190px;
+  z-index: 9;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.color-picker .settings-header {
+  background: -webkit-gradient(linear, left top, right top, from(#777), to(#444));
+  background: linear-gradient(to right, #777, #444);
+  padding: 5px 15px;
+}
+.color-picker .settings-header h3 {
+  color: #fff;
+  margin: 0;
+  font-size: 20px;
+  text-align: center;
+  padding: 4px 9px;
+}
+.color-picker .section {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #444;
+  overflow: auto;
+}
+.color-picker .section i {
+  font-size: 16px;
+  margin-right: 10px;
+}
+.color-picker a.handle {
+  position: absolute;
+  right: 190px;
+  width: 50px;
+  height: 43px;
+  color: #fff;
+  -webkit-transition: all ease-in 0.3s;
+  transition: all ease-in 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 25px;
+  z-index: -1;
+  text-decoration: none;
+  background: -webkit-gradient(linear, left top, right top, from(#777), to(#444));
+  background: linear-gradient(to right, #777, #444);
+  top: 0;
+}
+.color-picker .colors a {
+  width: 35px;
+  height: 35px;
+  margin: 7px 7px;
+  float: left;
+  -webkit-transition: all ease-in 0.3s;
+  transition: all ease-in 0.3s;
+}
+.color-picker .skin a {
+  display: block;
+  width: 70px;
+  height: 30px;
+  margin-left: 0;
+  margin-top: 0;
+  margin-right: 5px;
+  float: left;
+  text-align: center;
+  line-height: 30px;
+  border: 2px transparent solid;
+}
+.color-picker .skin a.actt {
+  border: 2px #fff solid;
+}
+
+.color-1 {
+  background: -webkit-gradient(linear, left top, right top, from(#b76cd2), to(#4c3bb3));
+  background: linear-gradient(to right, #b76cd2, #4c3bb3);
+}
+
+.color-2 {
+  background: -webkit-gradient(linear, left top, right top, from(#00eefa), to(#05b6eb));
+  background: linear-gradient(to right, #00eefa, #05b6eb);
+}
+
+.color-3 {
+  background: -webkit-gradient(linear, left top, right top, from(#ff9f0e), to(#ff4a10));
+  background: linear-gradient(to right, #ff9f0e, #ff4a10);
+}
+
+.color-4 {
+  background: -webkit-gradient(linear, left top, right top, from(#09e072), to(#007d1d));
+  background: linear-gradient(to right, #09e072, #007d1d);
+}
+
+.color-5 {
+  background: -webkit-gradient(linear, left top, right top, from(#ff729b), to(#ce002f));
+  background: linear-gradient(to right, #ff729b, #ce002f);
+}
+
+.color-6 {
+  background: -webkit-gradient(linear, left top, right top, from(#fde08d), to(#df9f28));
+  background: linear-gradient(to right, #fde08d, #df9f28);
+}
+
+.plan-header .plan-title {
+  font-family: "Lato", sans-serif;
+}
+
+.plan-price .price {
+  font-family: "Lato", sans-serif;
+}
+
+.plan-list li {
+  font-family: "Lato", sans-serif;
+}
+
+.plan-button {
+  font-family: "Lato", sans-serif;
+}
+
+/*==============
+	End Page General css
+=================*/
+/* Start Pricing plan style 1 */
+.plan-style-1 {
+  margin: 0 auto 30px auto;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 30px #eee;
+          box-shadow: 0px 0px 30px #eee;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.plan-style-1:hover {
+  -webkit-box-shadow: 0px 0px 30px #ccc;
+          box-shadow: 0px 0px 30px #ccc;
+}
+.plan-style-1 .plan-header {
+  padding: 30px 0 40px 0;
+  position: relative;
+}
+.plan-style-1 .plan-header:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 25px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-image: url("../img/header_style_1.png");
+  background-size: 100% 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.plan-style-1 .plan-header .plan-title {
+  margin: -14px 0 4px 0;
+  color: #f7f7f7;
+  line-height: 40px;
+  font-size: 20px;
+  font-weight: 400;
+}
+.plan-style-1 .plan-price .price {
+  margin: 0;
+  font-size: 55px;
+  font-weight: 900;
+  line-height: 46px;
+  color: #fff;
+}
+.plan-style-1 .plan-price .price span {
+  padding: 0 5px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+.plan-style-1 .plan-list {
+  padding: 15px 0;
+  margin-bottom: 0;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+}
+.plan-style-1 .plan-list li {
+  margin: 0 30px;
+  position: relative;
+  list-style-type: none;
+  color: #888;
+  line-height: 35px;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.02rem;
+}
+.plan-style-1 .plan-list li i {
+  margin-right: 5px;
+  position: relative;
+  font-size: 13px;
+  line-height: 42px;
+}
+.plan-style-1 .plan-list li i.far.fa-times-circle {
+  color: red;
+}
+.plan-style-1 .plan-list .tooltip-info {
+  cursor: pointer;
+}
+.plan-style-1 .plan-list .tooltip-hover-text {
+  color: #555;
+  font-weight: 600;
+}
+.plan-style-1 .tooltip-info .tooltiptext {
+  visibility: hidden;
+  width: 150px;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 12px;
+  letter-spacing: 0.02rem;
+  color: #fff;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 2;
+  bottom: 35px;
+  left: 45%;
+  margin-left: -60px;
+}
+.plan-style-1 .tooltip-info .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+}
+.plan-style-1 .tooltip-info:hover .tooltiptext {
+  visibility: visible;
+}
+.plan-style-1 .plan-bottom {
+  padding: 10px 0 40px 0;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+}
+.plan-style-1 .plan-button {
+  padding: 13px 30px;
+  font-size: 15px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-size: 300% 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.plan-style-1 .plan-button:hover {
+  background-position: 100% 0;
+  color: #fff;
+  -webkit-box-shadow: 0px 20px 20px #eee;
+          box-shadow: 0px 20px 20px #eee;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* End Pricing plan style 1 */
+/* Start Pricing plan style 2 */
+.plan-style-2 {
+  margin: 0 auto 30px auto;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 30px #eee;
+          box-shadow: 0px 0px 30px #eee;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.plan-style-2:hover {
+  -webkit-box-shadow: 0px 0px 30px #ccc;
+          box-shadow: 0px 0px 30px #ccc;
+}
+.plan-style-2 .plan-header {
+  position: relative;
+  background: #fff;
+}
+.plan-style-2 .plan-header:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 110px;
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+  background-image: url("../img/header_style_2.png");
+  background-size: 100% 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.plan-style-2 .plan-header .plan-title {
+  margin: 0 0 21px 0;
+  padding: 15px 0 0 30px;
+  text-align: left;
+  color: #fff;
+  line-height: 42px;
+  font-size: 20px;
+  font-weight: 400;
+}
+.plan-style-2 .plan-header .plan-title:after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  border-radius: 3px;
+  background: -webkit-gradient(linear, left top, right top, from(#fff), to(transparent));
+  background: linear-gradient(to right, #fff, transparent);
+  position: absolute;
+  top: 49px;
+  left: 30px;
+}
+.plan-style-2 .plan-price .price {
+  margin: 0 -5px 0 0;
+  padding: 10px 30px 0px 30px;
+  text-align: right;
+  position: relative;
+  font-size: 50px;
+  color: #777;
+  font-weight: 900;
+  line-height: 45px;
+  z-index: 1;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.plan-style-2 .plan-price .price span {
+  padding: 0 5px;
+  font-size: 15px;
+  font-weight: 400;
+}
+.plan-style-2 .plan-list {
+  padding: 2px 0 20px 0;
+  margin-bottom: 0;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+}
+.plan-style-2 .plan-list li {
+  margin: 0 30px;
+  position: relative;
+  list-style-type: none;
+  color: #888;
+  line-height: 35px;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.02rem;
+}
+.plan-style-2 .plan-list .tooltip-info {
+  cursor: pointer;
+}
+.plan-style-2 .plan-list .tooltip-hover-text {
+  color: #555;
+  font-weight: 600;
+}
+.plan-style-2 .tooltip-info .tooltiptext {
+  visibility: hidden;
+  width: 150px;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 12px;
+  letter-spacing: 0.02rem;
+  color: #fff;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 2;
+  bottom: 35px;
+  left: 45%;
+  margin-left: -60px;
+}
+.plan-style-2 .tooltip-info .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+}
+.plan-style-2 .tooltip-info:hover .tooltiptext {
+  visibility: visible;
+}
+.plan-style-2 .plan-bottom {
+  padding: 70px 0 42px 0;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+}
+.plan-style-2 .plan-bottom:after {
+  content: "";
+  width: 100%;
+  height: 38px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../img/bottom_style_2.png");
+  background-size: 100% 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.plan-style-2 .plan-button {
+  padding: 13px 30px;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #fff;
+}
+.plan-style-2 .plan-button:hover {
+  background-color: #fff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* End Pricing plan style 2 */
+/* Start Pricing plan style 3 */
+.plan-style-3 {
+  margin: 0 auto 30px auto;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 30px #eee;
+          box-shadow: 0px 0px 30px #eee;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.plan-style-3:hover {
+  -webkit-box-shadow: 0px 0px 30px #ccc;
+          box-shadow: 0px 0px 30px #ccc;
+}
+.plan-style-3 .plan-header {
+  padding: 30px 0 38px 0;
+  position: relative;
+}
+.plan-style-3 .plan-header:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../img/header_bg_style_3.png");
+  background-size: 100% 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+.plan-style-3 .plan-header .plan-title {
+  margin: -14px 0 7px 0;
+  position: relative;
+  color: #f7f7f7;
+  line-height: 40px;
+  font-size: 20px;
+  font-weight: 400;
+}
+.plan-style-3 .plan-price .price {
+  margin: -3px 0 0 0;
+  font-size: 55px;
+  font-weight: 900;
+  line-height: 46px;
+  color: #fff;
+  position: relative;
+}
+.plan-style-3 .plan-price .price span {
+  padding: 0 5px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+.plan-style-3 .plan-list {
+  padding: 16px 0 15px 0;
+  margin-bottom: 0;
+  background-color: #fff;
+}
+.plan-style-3 .plan-list li {
+  margin: 0 30px;
+  position: relative;
+  list-style-type: none;
+  color: #888;
+  line-height: 35px;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.02rem;
+}
+.plan-style-3 .plan-list li i {
+  margin-right: 5px;
+  position: relative;
+  font-size: 13px;
+  line-height: 42px;
+}
+.plan-style-3 .plan-list li i.far.fa-times-circle {
+  color: red;
+}
+.plan-style-3 .plan-list .tooltip-info {
+  cursor: pointer;
+}
+.plan-style-3 .plan-list .tooltip-hover-text {
+  color: #555;
+  font-weight: 600;
+}
+.plan-style-3 .tooltip-info .tooltiptext {
+  visibility: hidden;
+  width: 150px;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 12px;
+  letter-spacing: 0.02rem;
+  color: #fff;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 2;
+  bottom: 35px;
+  left: 45%;
+  margin-left: -60px;
+}
+.plan-style-3 .tooltip-info .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+}
+.plan-style-3 .tooltip-info:hover .tooltiptext {
+  visibility: visible;
+}
+.plan-style-3 .plan-bottom {
+  padding: 61px 0 42px 0;
+  position: relative;
+  overflow: hidden;
+}
+.plan-style-3 .plan-bottom:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../img/bottom_bg_style_3.png");
+  background-size: 100% 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.plan-style-3 .plan-button {
+  padding: 13px 30px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-image: linear-gradient(45deg, #fff 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+  border: 2px solid #fff;
+  position: relative;
+  z-index: 1;
+}
+.plan-style-3 .plan-button:hover {
+  background-position: 0%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* End Pricing plan style 3 */
+/* Start Pricing plan style 4 */
+.plan-style-4 {
+  margin: 0 auto 30px auto;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 30px #eee;
+          box-shadow: 0px 0px 30px #eee;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.plan-style-4:hover {
+  -webkit-box-shadow: 0px 0px 30px #ccc;
+          box-shadow: 0px 0px 30px #ccc;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+.plan-style-4 .plan-header {
+  padding: 25px 0 20px 0;
+  position: relative;
+  background: #fff;
+}
+.plan-style-4 .plan-header .plan-label {
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase;
+  width: 281px;
+  text-align: center;
+  display: block;
+  position: absolute;
+  right: -100px;
+  top: 15px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(45deg);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+}
+.plan-style-4 .plan-header .plan-icon {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 20px 0 30px 0;
+  width: 100px;
+  height: 100px;
+  display: block;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 35px;
+}
+.plan-style-4 .plan-header .plan-title {
+  margin: 101px 0 -3px 0;
+  line-height: 41px;
+  font-size: 20px;
+  color: #555;
+  font-weight: 400;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.plan-style-4 .plan-price {
+  position: relative;
+}
+.plan-style-4 .plan-price:after {
+  content: "";
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../img/price_style_4.png);
+  background-size: 100% 100%;
+  background-position: bottom;
+}
+.plan-style-4 .plan-price .price {
+  margin-bottom: 0;
+  padding: 22px 0 10px 0;
+  font-size: 55px;
+  font-weight: 900;
+  line-height: 45px;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+.plan-style-4 .plan-price .price span {
+  padding: 0 5px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+.plan-style-4 .plan-list {
+  margin-bottom: 0;
+  padding: 17px 0 20px 0;
+  background-color: #fff;
+  z-index: 1;
+}
+.plan-style-4 .plan-list li {
+  margin: 0 30px;
+  position: relative;
+  list-style-type: none;
+  font-size: 14px;
+  color: #888;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0.02rem;
+}
+.plan-style-4 .plan-list .tooltip-info {
+  cursor: pointer;
+}
+.plan-style-4 .plan-list .tooltip-hover-text {
+  color: #555;
+  font-weight: 600;
+}
+.plan-style-4 .tooltip-info .tooltiptext {
+  visibility: hidden;
+  width: 150px;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 12px;
+  letter-spacing: 0.02rem;
+  color: #fff;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 2;
+  bottom: 35px;
+  left: 45%;
+  margin-left: -60px;
+}
+.plan-style-4 .tooltip-info .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+}
+.plan-style-4 .tooltip-info:hover .tooltiptext {
+  visibility: visible;
+}
+.plan-style-4 .plan-bottom {
+  padding: 40px 0;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+}
+.plan-style-4 .plan-button {
+  padding: 13px 30px;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-size: 300% 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.plan-style-4 .plan-button:hover {
+  background-position: 100% 0;
+  color: #fff;
+  -webkit-box-shadow: 0px 20px 20px #eee;
+          box-shadow: 0px 20px 20px #eee;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* End Pricing plan style 4 */
+/* Start Pricing plan style 5 */
+.plan-style-5 {
+  margin: 0 auto 30px auto;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 30px #eee;
+          box-shadow: 0px 0px 30px #eee;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.plan-style-5:hover {
+  -webkit-box-shadow: 0px 0px 30px #ccc;
+          box-shadow: 0px 0px 30px #ccc;
+}
+.plan-style-5 .plan-header {
+  padding: 25px 0 0 0;
+  position: relative;
+  background: #fff;
+}
+.plan-style-5 .plan-header .lable {
+  padding: 3px 8px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 15px;
+}
+.plan-style-5 .plan-header .plan-icon {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 20px 0 30px 0;
+  width: 100px;
+  height: 100px;
+  display: block;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 35px;
+}
+.plan-style-5 .plan-header .plan-title {
+  margin: 101px 0 18px 0;
+  line-height: 40px;
+  font-size: 20px;
+  color: #555;
+  font-weight: 400;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.plan-style-5 .plan-price {
+  position: relative;
+}
+.plan-style-5 .plan-price:after {
+  content: "";
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-image: url("../img/price_style_5.png");
+  background-size: 100% 100%;
+  background-position: bottom;
+}
+.plan-style-5 .plan-price .price {
+  margin-bottom: 0;
+  padding: 22px 0 10px 0;
+  font-size: 55px;
+  font-weight: 900;
+  line-height: 45px;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+.plan-style-5 .plan-price .price span {
+  padding: 0 5px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+.plan-style-5 .plan-list {
+  margin-bottom: 0;
+  padding: 17px 30px 16px 30px;
+  position: relative;
+  background-color: #fff;
+}
+.plan-style-5 .plan-list li {
+  position: relative;
+  list-style-type: none;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 400;
+  color: #888;
+  letter-spacing: 0.02rem;
+  line-height: 40px;
+  border-bottom: 1px solid #eee;
+}
+.plan-style-5 .plan-list li:last-child {
+  border-bottom: none;
+}
+.plan-style-5 .plan-list li i {
+  margin: 0 10px;
+  float: right;
+  position: relative;
+  right: -10px;
+  font-size: 13px;
+  line-height: 40px;
+}
+.plan-style-5 .plan-list li i.far.fa-times-circle {
+  color: #fb5757;
+}
+.plan-style-5 .plan-list .tooltip-info {
+  cursor: pointer;
+}
+.plan-style-5 .plan-list .tooltip-hover-text {
+  color: #555;
+  font-weight: 600;
+}
+.plan-style-5 .tooltip-info .tooltiptext {
+  visibility: hidden;
+  width: 150px;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 12px;
+  letter-spacing: 0.02rem;
+  color: #fff;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 2;
+  bottom: 35px;
+  left: 20%;
+  margin-left: -60px;
+}
+.plan-style-5 .tooltip-info .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+}
+.plan-style-5 .tooltip-info:hover .tooltiptext {
+  visibility: visible;
+}
+.plan-style-5 .plan-bottom {
+  padding: 13px 0 42px 0;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+}
+.plan-style-5 .plan-button {
+  padding: 13px 30px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 30px;
+}
+.plan-style-5 .plan-button i {
+  margin: 0 0 0 10px;
+  font-size: 12px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.plan-style-5 .plan-button:hover i {
+  margin: 0 0 0 15px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* End Pricing plan style 5 */

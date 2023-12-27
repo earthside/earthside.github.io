@@ -1,0 +1,111 @@
+/*Color CSS File 
+	===================
+	Item Name: Sava - Creative pricing tables
+	Author: Ashish Maraviya
+	Version: 2.1
+	Copyright 2021-2022
+===================*/
+/* Switcher general css start */
+.Sava-switcher .Sava-switch {
+  background: -webkit-gradient(linear, left top, right top, from(#fde08d), to(#df9f28));
+  background: linear-gradient(to right, #fde08d, #df9f28);
+  border: 1px solid #fff;
+}
+
+/* Switcher general css end */
+/* Start Pricing plan style 1 */
+.plan-style-1 .plan-header {
+  background: -webkit-gradient(linear, left top, right top, from(#fde08d), to(#df9f28));
+  background: linear-gradient(to right, #fde08d, #df9f28);
+}
+.plan-style-1 .plan-button {
+  background-image: -webkit-gradient(linear, left top, right top, from(#fde08d), color-stop(#df9f28), color-stop(#df9f28), to(#fde08d));
+  background-image: linear-gradient(to right, #fde08d, #df9f28, #df9f28, #fde08d);
+}
+.plan-style-1 .plan-list li i {
+  color: #df9f28;
+}
+
+/* End Pricing plan style 1 */
+/* Start Pricing plan style 2 */
+.plan-style-2:hover .price {
+  color: #df9f28;
+}
+.plan-style-2 .plan-button:hover {
+  color: #df9f28;
+}
+.plan-style-2 .plan-header {
+  background: -webkit-gradient(linear, left top, right top, from(#fde08d), to(#df9f28));
+  background: linear-gradient(to right, #fde08d, #df9f28);
+}
+.plan-style-2 .plan-bottom {
+  background: -webkit-gradient(linear, left top, right top, from(#fde08d), to(#df9f28));
+  background: linear-gradient(to right, #fde08d, #df9f28);
+}
+
+/* End Pricing plan style 2 */
+/* Start Pricing plan style 3 */
+.plan-style-3 .plan-header {
+  background: -webkit-gradient(linear, left top, right top, from(#fde08d), to(#df9f28));
+  background: linear-gradient(to right, #fde08d, #df9f28);
+}
+.plan-style-3 .plan-bottom {
+  background: -webkit-gradient(linear, left top, right top, from(#fde08d), to(#df9f28));
+  background: linear-gradient(to right, #fde08d, #df9f28);
+}
+.plan-style-3 .plan-list li i.far.fa-check-circle {
+  color: #df9f28;
+}
+.plan-style-3 .plan-button:hover {
+  color: #df9f28;
+}
+
+/* End Pricing plan style 3 */
+/* Start Pricing plan style 4 */
+.plan-style-4 .plan-header {
+  border-bottom: 5px solid #df9f28;
+}
+.plan-style-4 .plan-header .plan-label {
+  background: -webkit-gradient(linear, left top, right top, from(#fde08d), to(#df9f28));
+  background: linear-gradient(to right, #fde08d, #df9f28);
+}
+.plan-style-4 .plan-header .plan-icon {
+  background: -webkit-gradient(linear, left top, right top, from(#fde08d), to(#df9f28));
+  background: linear-gradient(to right, #fde08d, #df9f28);
+}
+.plan-style-4 .plan-price {
+  background: -webkit-gradient(linear, left top, right top, from(#fde08d), to(#df9f28));
+  background: linear-gradient(to right, #fde08d, #df9f28);
+}
+.plan-style-4:hover .plan-title {
+  color: #df9f28;
+}
+.plan-style-4 .plan-button {
+  background-image: -webkit-gradient(linear, left top, right top, from(#fde08d), color-stop(#df9f28), color-stop(#df9f28), to(#fde08d));
+  background-image: linear-gradient(to right, #fde08d, #df9f28, #df9f28, #fde08d);
+}
+
+/* End Pricing plan style 4 */
+/* Start Pricing plan style 5 */
+.plan-style-5 .plan-header .lable {
+  background: -webkit-gradient(linear, left top, right top, from(#fde08d), to(#df9f28));
+  background: linear-gradient(to right, #fde08d, #df9f28);
+}
+.plan-style-5 .plan-header .plan-icon {
+  background: -webkit-gradient(linear, left top, right top, from(#fde08d), to(#df9f28));
+  background: linear-gradient(to right, #fde08d, #df9f28);
+}
+.plan-style-5 .plan-price {
+  background: -webkit-gradient(linear, left top, right top, from(#fde08d), to(#df9f28));
+  background: linear-gradient(to right, #fde08d, #df9f28);
+}
+.plan-style-5:hover .plan-title {
+  color: #df9f28;
+}
+.plan-style-5 .plan-list li i.far.fa-check-circle {
+  color: #df9f28;
+}
+.plan-style-5 .plan-button {
+  color: #df9f28;
+  border: 2px solid #df9f28;
+}
