@@ -1,0 +1,126 @@
+
+
+// Utilities ( Import Utilities )
+@import "utilities/_variables";
+
+/* Switcher general css start */
+.Sava-switcher {
+	.Sava-switch {
+		background: linear-gradient(to right, $table-color-orange-1, $table-color-orange-2);
+		border: 1px solid #fff;
+	}
+}
+/* Switcher general css end */
+/* Start Pricing plan style 1 */
+.plan-style-1 {
+	.plan-header {
+		background: linear-gradient(to right, $table-color-orange-1, $table-color-orange-2);
+	}
+	.plan-button {
+		background-image: linear-gradient(to right, $table-color-orange-1, $table-color-orange-2, $table-color-orange-2, $table-color-orange-1);
+	}
+	.plan-list {
+		li {
+			i {
+				color: $table-color-orange-2;
+			}
+		}
+	}
+}
+/* End Pricing plan style 1 */
+/* Start Pricing plan style 2 */
+.plan-style-2 {
+	&:hover {
+		.price {
+			color: $table-color-orange-2;
+		}
+	}
+	.plan-button {
+		&:hover {
+			color: $table-color-orange-2;
+		}
+	}
+	.plan-header {
+		background: linear-gradient(to right, $table-color-orange-1, $table-color-orange-2);
+	}
+	.plan-bottom {
+		background: linear-gradient(to right, $table-color-orange-1, $table-color-orange-2);
+	}
+}
+/* End Pricing plan style 2 */
+/* Start Pricing plan style 3 */
+.plan-style-3 {
+	.plan-header {
+		background: linear-gradient(to right, $table-color-orange-1, $table-color-orange-2);
+	}
+	.plan-bottom {
+		background: linear-gradient(to right, $table-color-orange-1, $table-color-orange-2);
+	}
+	.plan-list {
+		li {
+			i.far.fa-check-circle {
+				color: $table-color-orange-2;
+			}
+		}
+	}
+	.plan-button {
+		&:hover {
+			color: $table-color-orange-2;
+		}
+	}
+}
+/* End Pricing plan style 3 */
+/* Start Pricing plan style 4 */
+.plan-style-4 {
+	.plan-header {
+		border-bottom: 5px solid $table-color-orange-2;
+		.plan-label {
+			background: linear-gradient(to right, $table-color-orange-1, $table-color-orange-2);
+		}
+		.plan-icon {
+			background: linear-gradient(to right, $table-color-orange-1, $table-color-orange-2);
+		}
+	}
+	.plan-price {
+		background: linear-gradient(to right, $table-color-orange-1, $table-color-orange-2);
+	}
+	&:hover {
+		.plan-title {
+			color: $table-color-orange-2;
+		}
+	}
+	.plan-button {
+		background-image: linear-gradient(to right, $table-color-orange-1, $table-color-orange-2, $table-color-orange-2, $table-color-orange-1);
+	}
+}
+/* End Pricing plan style 4 */
+/* Start Pricing plan style 5 */
+.plan-style-5 {
+	.plan-header {
+		.lable {
+			background: linear-gradient(to right, $table-color-orange-1, $table-color-orange-2);
+		}
+		.plan-icon {
+			background: linear-gradient(to right, $table-color-orange-1, $table-color-orange-2);
+		}
+	}
+	.plan-price {
+		background: linear-gradient(to right, $table-color-orange-1, $table-color-orange-2);
+	}
+	&:hover {
+		.plan-title {
+			color: $table-color-orange-2;
+		}
+	}
+	.plan-list {
+		li {
+			i.far.fa-check-circle {
+				color: $table-color-orange-2;
+			}
+		}
+	}
+	.plan-button {
+		color: $table-color-orange-2;
+		border: 2px solid $table-color-orange-2;
+	}
+}

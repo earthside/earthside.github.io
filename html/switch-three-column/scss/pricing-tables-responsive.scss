@@ -1,0 +1,115 @@
+/* CSS File 
+	===================
+	Item Name: Sava - Creative pricing tables
+	Author: Ashish Maraviya
+	Version: 3.0
+	Copyright 2023-2024
+===================*/
+@media only screen and (max-width: 767px) {
+	.plan-style-1 {
+		max-width: 400px;
+		margin: 0 auto 30px auto;
+		.plan-price {
+			.price {
+				font-size: 50px;
+			}
+		}
+		.plan-header {
+			.plan-title {
+				margin: -14px 0 2px 0;
+			}
+		}
+	}
+	.plan-style-2 {
+		max-width: 400px;
+		margin: 0 auto 30px auto;
+		.plan-price {
+			.price {
+				font-size: 50px;
+			}
+		}
+	}
+	.plan-style-3 {
+		max-width: 400px;
+		margin: 0 auto 30px auto;
+		.plan-price {
+			.price {
+				font-size: 50px;
+			}
+		}
+		.plan-header {
+			.plan-title {
+				margin: -14px 0 5px 0;
+			}
+		}
+	}
+	.plan-style-4 {
+		max-width: 400px;
+		margin: 0 auto 30px auto;
+		.plan-price {
+			.price {
+				font-size: 50px;
+				padding: 20px 0 10px 0;
+			}
+		}
+	}
+	.plan-style-5 {
+		max-width: 400px;
+		margin: 0 auto 30px auto;
+		.plan-price {
+			.price {
+				font-size: 50px;
+				padding: 20px 0 10px 0;
+			}
+		}
+	}
+	.Sava-wrapper {
+		max-width: 400px;
+		margin: 0 auto 30px auto;
+	}
+}
+@media only screen and (max-width: 576px) {
+	.plan-style-1 {
+		max-width: 350px;
+		.plan-price {
+			.price {
+				font-size: 48px;
+			}
+		}
+	}
+	.plan-style-2 {
+		max-width: 350px;
+		.plan-price {
+			.price {
+				font-size: 48px;
+			}
+		}
+	}
+	.plan-style-3 {
+		max-width: 350px;
+		.plan-price {
+			.price {
+				font-size: 48px;
+			}
+		}
+	}
+	.plan-style-4 {
+		max-width: 350px;
+		.plan-price {
+			.price {
+				font-size: 48px;
+			}
+		}
+	}
+	.plan-style-5 {
+		max-width: 350px;
+		.plan-price {
+			.price {
+				font-size: 48px;
+			}
+		}
+	}
+	.Sava-wrapper {
+		max-width: 350px;
+	}
+}
