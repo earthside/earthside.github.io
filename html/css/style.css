@@ -909,7 +909,7 @@ a.animated_link.active::before {
 /*-------- 1.4 Structure --------*/
 /* Header */
 header {
-  padding: 20px 0;
+  padding: 10px 0;
   width: 100%;
   z-index: 999;
   position: fixed;
